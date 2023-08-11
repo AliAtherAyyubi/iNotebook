@@ -8,7 +8,7 @@ import '../CSS/about.css'
 export default function About() {
   return (
     <>
-    {/* this is about page */}
+    {/* this is about */}
     <div className="text-white aboutImg text-center">
                 <div className="note-img">
                     <h1 className="display-4">Empowering  Students</h1>
