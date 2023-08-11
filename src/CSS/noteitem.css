@@ -1,0 +1,44 @@
+
+
+form input{
+    border: 1px solid black;
+}
+.card{
+    position: relative;
+    /* height: 300px; */
+    transition: 0.4s ease;
+}
+.card:hover{
+    box-shadow: 0px 2px 20px gray;
+}
+
+.iconbox{
+    /* border: 1px solid black; */
+    width: 40%;
+    margin-top: -20px;
+    /* margin-bottom: 10px; */
+}
+
+.editicon{
+    color: green;
+}
+.delicon{
+    color: rgb(229, 9, 27);
+}
+
+.card-title{
+    color: rgb(93, 0, 255);
+}
+Link{
+    text-decoration: none;
+}
+@media screen and (max-width:900px) {
+    .welcomeline{
+        text-align: center;
+    }
+}
+@media screen and (min-width:1200px) {
+    .welcomeline{
+        text-align: center;
+    }
+}
