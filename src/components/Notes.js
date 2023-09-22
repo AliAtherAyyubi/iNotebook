@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 export default function Notes(props) {
   // using refHook to open a Modal //
   let navigate = useNavigate();
-
   const ref = useRef(null);
   let refclose = useRef(null);
   let context = useContext(NoteContext);

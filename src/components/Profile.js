@@ -1,12 +1,12 @@
 import React, { useContext,useState,useRef,useEffect } from 'react'
 import NoteContext from '../context/note/noteContext'
 export default function Profile() {
-    const ref = useRef(null);
     let refclose=useRef(null)
     let context= useContext(NoteContext)
     let {updateuser,getuser,user}=context
+
     useEffect(() => {
-        getuser()
+        getuser();
       }, [])
     // let user= getuser();
     // state to set or update user attributes//
