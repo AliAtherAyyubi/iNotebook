@@ -13,6 +13,7 @@ export default function Notestate(props) {
     }
   ];
 
+
   const [notes, setNotes] = useState(initialState);
   const [user, setuser] = useState({"_id": "","name": "","email": "","__v": 0})
   let host = "http://localhost:5000";

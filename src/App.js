@@ -58,7 +58,7 @@ function App() {
 
     </Router>
     <ToastContainer
-        position="bottom-right"
+        position="top-right"
         pauseOnHover
         closeOnClick
         // limit={1}

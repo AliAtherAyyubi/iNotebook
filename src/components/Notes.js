@@ -3,6 +3,7 @@ import NoteContext from "../context/note/noteContext";
 import Noteitem from "./Noteitem";
 import AddNotes from "./AddNotes";
 import { useNavigate } from "react-router-dom";
+
 export default function Notes(props) {
   // using refHook to open a Modal //
   let navigate = useNavigate();

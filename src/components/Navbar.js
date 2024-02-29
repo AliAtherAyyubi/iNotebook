@@ -1,13 +1,15 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import '../CSS/profile.css'
+import NoteContext from '../context/note/noteContext'
 import AccountMenu from './AccountMenu';
 // import Loader from './Loader'
 
 export default function Navbar(props) {
   let location = useLocation();
-  
+  let context= useContext(NoteContext)
+  let {user}=context;
   React.useEffect(() => {
     // console.log(location.pathname)
   }, [location]);
@@ -31,7 +33,7 @@ export default function Navbar(props) {
       </ul>
       <form className="d-flex" role="search">
         
-        {localStorage.getItem('token') && <AccountMenu/>}
+        {localStorage.getItem('token') && <AccountMenu avatar={user.name}/>}
           {/* // login button  */}
         {!localStorage.getItem('token') && <Link className="btn btn-primary mx-3 text-white "  to="/login">Login</Link>}
 

@@ -1,5 +1,6 @@
 import React, { useContext,useState,useRef,useEffect } from 'react'
 import NoteContext from '../context/note/noteContext'
+
 export default function Profile() {
     let refclose=useRef(null)
     let context= useContext(NoteContext)

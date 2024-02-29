@@ -11,7 +11,7 @@ import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
 
-export default function AccountMenu() {
+export default function AccountMenu(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -38,7 +38,7 @@ export default function AccountMenu() {
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            <Avatar sx={{ width: 42, height: 42 }}>M</Avatar>
+            <Avatar sx={{ width: 42, height: 42 }}>{props.avatar[0]}</Avatar>
           </IconButton>
         </Tooltip>
       </Box>

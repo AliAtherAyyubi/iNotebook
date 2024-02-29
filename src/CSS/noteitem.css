@@ -42,3 +42,8 @@ Link{
         text-align: center;
     }
 }
+
+input,input:focus{
+    outline: 1px solid black;
+}
+
